@@ -1,0 +1,28 @@
+{
+  "name": "Customer",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "address": {
+      "type": "embedsOne",
+      "model": "Address",
+      "property": "customerAddress",
+      "options":{
+        "forceId": false,
+        "validate": "true"
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
