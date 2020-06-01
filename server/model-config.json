@@ -39,11 +39,27 @@
     "dataSource": null
   },
   "Customer": {
-    "dataSource": "mssqlDataSource",
+    "dataSource": "postgresDb",
     "public": true
   },
   "Address": {
-    "dataSource": "mssqlDataSource",
+    "dataSource": "postgresDb",
     "public": false
+  },
+  "EmailAddress": {
+    "dataSource": "postgresDb",
+    "public": false
+  },
+  "Order": {
+    "dataSource": "postgresDb",
+    "public": true
+  },
+  "Item": {
+    "dataSource": "postgresDb",
+    "public": true
+  },
+  "OrderItem": {
+    "dataSource": "postgresDb",
+    "public": true
   }
 }

@@ -1,9 +1,16 @@
 'use strict';
 
 const app = require('../server/server');
-const ds = app.datasources.postgresDs;
+const ds = app.datasources.postgresDb;
 
-ds.autoupdate(['Customer'], (err) => {
+const models = [
+    "Customer",
+    "Order",
+    "OrderItem",
+    "Item"
+  ];
+
+ds.autoupdate(models, (err) => {
     if(err){
         throw err;
     }

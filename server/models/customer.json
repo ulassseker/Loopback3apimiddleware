@@ -17,10 +17,24 @@
       "type": "embedsOne",
       "model": "Address",
       "property": "customerAddress",
-      "options":{
+      "options": {
         "forceId": false,
-        "validate": "true"
+        "validate": true
       }
+    },
+    "emails": {
+      "type": "embedsMany",
+      "model": "EmailAddress",
+      "property": "emailList",
+      "options": {
+        "forceId": false,
+        "validate": true
+      }
+    },
+    "orders": {
+      "type": "hasMany",
+      "model": "Order",
+      "foreignKey": ""
     }
   },
   "acls": [],

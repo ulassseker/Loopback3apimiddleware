@@ -10,5 +10,14 @@
     "name": "mssqlDataSource",
     "user": "DB_A4AC98_bro_admin",
     "connector": "mssql"
+  },
+  "postgresDb": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "lb_db",
+    "password": "1234",
+    "name": "postgresDb",
+    "user": "postgres",
+    "connector": "postgresql"
   }
 }
