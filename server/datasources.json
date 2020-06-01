@@ -3,14 +3,6 @@
     "name": "db",
     "connector": "memory"
   },
-  "mssqlDataSource": {
-    "host": "sql6009.site4now.net",
-    "database": "DB_A4AC98_bro",
-    "password": "memo2020",
-    "name": "mssqlDataSource",
-    "user": "DB_A4AC98_bro_admin",
-    "connector": "mssql"
-  },
   "postgresDb": {
     "host": "localhost",
     "port": 5432,
